@@ -62,7 +62,7 @@ read -p "        a test file and its corresponding benchmark file? (y/n) " $doal
 mkdir -p $rundir
 
 # Copy the executable to the run directory.
-cp $blddir/*TEST.exe $rundir
+copy $blddir/*TEST.exe $rundir
 
 # Prepare for multiple threads, assuming Intel Compiler.
 setenv OMP_NUM_THREADS $CARMA_THREADS
